@@ -1,6 +1,10 @@
-# Font for terminal:
+# OSX? Install iterm2
 
-https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf
+https://www.iterm2.com/
+
+# Install zshell
+
+https://github.com/robbyrussell/oh-my-zsh
 
 # Add to .zshrc
 
@@ -9,6 +13,12 @@ https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20P
 # Theme for zshell:
 
 https://github.com/wesbos/Cobalt2-iterm/blob/master/cobalt2.zsh-theme
+
+## Font for terminal:
+
+Icons need the *Inconsolata* fonts
+
+https://github.com/powerline/fonts/blob/master/Inconsolata/Inconsolata%20for%20Powerline.otf
 
 ## Changes:
 
