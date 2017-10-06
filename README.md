@@ -12,7 +12,7 @@ https://github.com/robbyrussell/oh-my-zsh
 
 # Theme for zshell:
 
-https://github.com/wesbos/Cobalt2-iterm/blob/master/cobalt2.zsh-theme
+https://github.com/wesbos/Cobalt2-iterm
 
 ## Font for terminal:
 
