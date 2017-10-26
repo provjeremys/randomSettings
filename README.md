@@ -8,7 +8,11 @@ https://github.com/robbyrussell/oh-my-zsh
 
 # Add to .zshrc
 
-`plugins=(git extract node npm z)`
+```
+plugins=(git extract node npm z)
+alias gitclean='echo "Deleting old branches" && git fetch -p && git branch -vv | awk '\''/: gone]/{print $1}'\'' | xargs git branch -d'
+```
+
 
 # Theme for zshell:
 
