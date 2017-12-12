@@ -42,3 +42,9 @@ diff cobalt2.zsh-theme ~/.oh-my-zsh/themes/cobalt2.zsh-theme
 ---
 >   prompt_segment blue white '%3~'
 ```
+
+# Setup keyboard replacements
+kirbydance -> `<(^.^<)  (>^.^)>  <(^.^)>`
+shruggy -> `¯\_(ツ)_/¯`
+fliptable -> `(╯°□°）╯︵ ┻━┻`
+fixtable -> `┬─┬ノ( º _ ºノ) `
