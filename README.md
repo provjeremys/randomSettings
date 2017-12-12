@@ -45,8 +45,8 @@ diff cobalt2.zsh-theme ~/.oh-my-zsh/themes/cobalt2.zsh-theme
 
 # Setup keyboard replacements
 ```
-kirbydance -> `<(^.^<)  (>^.^)>  <(^.^)>`
-shruggy -> `¯\_(ツ)_/¯`
-fliptable -> `(╯°□°）╯︵ ┻━┻`
-fixtable -> `┬─┬ノ( º _ ºノ) `
+kirbydance -> <(^.^<)  (>^.^)>  <(^.^)>
+shruggy -> ¯\_(ツ)_/¯
+fliptable -> (╯°□°）╯︵ ┻━┻
+fixtable -> ┬─┬ノ( º _ ºノ)
 ```
