@@ -10,9 +10,14 @@ https://github.com/robbyrussell/oh-my-zsh
 
 ```
 plugins=(git extract node npm z)
-alias gitclean='echo "Deleting old branches" && git fetch -p && git branch -vv | awk '\''/: gone]/{print $1}'\'' | xargs git branch -d'
 ```
 
+# Add to .gitconfig
+> This enables `npm cleanhouse` to delete branches no longer tied to origin branches for a given project
+```
+[alias]
+	cleanhouse = ! echo "Deleting old branches" && git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+ ```
 
 # Theme for zshell:
 
