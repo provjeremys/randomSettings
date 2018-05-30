@@ -21,4 +21,7 @@ nnoremap k gk
 
 " highlight last inserted text
 nnoremap gV `[v`]
-
+let mapleader=","       " leader is comma
+inoremap jk <esc>       " jk is escape... trying it
+" Super-undo
+nnoremap <leader>u :GundoToggle<CR>
