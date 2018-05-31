@@ -1,5 +1,6 @@
 execute pathogen#infect()
 syntax enable 
+let mapleader=","       " leader is comma
 colorscheme badwolf     " try it out
 set showcmd             " Will display the command as it is typed
 set tabstop=4           " number of visual spaces per TAB
@@ -23,7 +24,6 @@ nnoremap k gk
 
 " highlight last inserted text
 nnoremap gV `[v`]
-let mapleader=","       " leader is comma
 inoremap jk <esc>       " jk is escape... trying it
 " Super-undo
 nnoremap <leader>u :GundoToggle<CR>
