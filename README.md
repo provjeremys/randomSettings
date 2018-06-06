@@ -16,7 +16,7 @@ plugins=(git extract node npm z)
 > This enables `npm cleanhouse` to delete branches no longer tied to origin branches for a given project
 ```
 [alias]
-	cleanhouse = ! echo "Deleting old branches" && git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d
+	cleanhouse = ! echo "Deleting old branches" && git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
  ```
 
 # Theme for zshell:
