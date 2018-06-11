@@ -13,6 +13,8 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+" enables Leader + y to do clipboard copy in visual mode
+vnoremap <silent> <leader>y :<CR>:let @a=@" \| execute "normal! vgvy" \| let res=system("pbcopy", @") \| let @"=@a<CR> 
 filetype indent on      " load filetype-specific indent files
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
