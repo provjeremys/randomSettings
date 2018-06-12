@@ -50,3 +50,14 @@ shruggy -> ¯\_(ツ)_/¯
 fliptable -> (╯°□°）╯︵ ┻━┻
 fixtable -> ┬─┬ノ( º _ ºノ)
 ```
+
+# Install Homebrew
+```
+xcode-select --install
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+# Install The Silver Searcher
+```
+brew install the_silver_searcher
+```
