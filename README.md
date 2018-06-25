@@ -10,6 +10,7 @@ https://github.com/robbyrussell/oh-my-zsh
 
 ```
 plugins=(git extract node npm z)
+alias chrome='open -a Google\ Chrome'
 ```
 
 # Add to .gitconfig
@@ -60,4 +61,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Install The Silver Searcher
 ```
 brew install the_silver_searcher
+```
+
+# Kubernetes Shortcuts
+
+```
+alias kc='kubectl'
+alias kcp='kubectl get pods -o wide --all-namespaces $1' 
 ```

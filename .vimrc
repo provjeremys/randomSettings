@@ -3,8 +3,8 @@ syntax enable
 let mapleader=","       " leader is comma
 colorscheme badwolf     " try it out
 set showcmd             " Will display the command as it is typed
-set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in tab when editing
+set tabstop=2           " number of visual spaces per TAB
+set softtabstop=2       " number of spaces in tab when editing
 set expandtab           " tabs are spaces
 set number              " show line numbers
 set cursorline          " highlight current line
@@ -33,10 +33,10 @@ nnoremap $ <nop>
 nnoremap ^ <nop>
 
 " move between windows sanely
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-H> <C-W>h<C-W>_
-map <C-L> <C-W>l<C-W>_
+map <C-J> <C-W>j<C-W><CR>
+map <C-K> <C-W>k<C-W><CR>
+map <C-H> <C-W>h<C-W><CR>
+map <C-L> <C-W>l<C-W><CR>
 
 " highlight last inserted text
 nnoremap gV `[v`]
@@ -46,6 +46,11 @@ inoremap jk <esc>
 nnoremap <leader>u :GundoToggle<CR>
 " open ag.vim
 nnoremap <leader>a :Ag
+" edit vimrc/zshrc and load vimrc bindings
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>:!source ~/.zshrc<CR><CR>
+
 
 " CtrlP settings
 let g:ctrlp_match_window = 'bottom,order:ttb'
