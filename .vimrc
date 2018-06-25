@@ -25,8 +25,8 @@ nnoremap j gj
 nnoremap k gk
 
 " move to beginning/end of line
-nnoremap B ^
-nnoremap E $
+map B ^
+map E $
 
 " $/^ doesn't do anything
 nnoremap $ <nop>
