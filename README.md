@@ -11,6 +11,11 @@ https://github.com/robbyrussell/oh-my-zsh
 ```
 plugins=(git extract node npm z)
 alias chrome='open -a Google\ Chrome'
+function gac() {
+  git add .
+  git commit -m "$1"
+  git push
+}
 ```
 
 # Add to .gitconfig

@@ -12,6 +12,8 @@ set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
+set ignorecase          " ignore case in search, use \C to enable
+set smartcase           " if you use upper-case, turn on Case Sensitive
 set hlsearch            " highlight matches
 " enables Leader + y to do clipboard copy in visual mode
 vnoremap <silent> <leader>y :<CR>:let @a=@" \| execute "normal! vgvy" \| let res=system("pbcopy", @") \| let @"=@a<CR> 
@@ -37,6 +39,10 @@ map <C-J> <C-W>j<C-W><CR>
 map <C-K> <C-W>k<C-W><CR>
 map <C-H> <C-W>h<C-W><CR>
 map <C-L> <C-W>l<C-W><CR>
+nnoremap <silent> > :exec "vertical resize +1"<CR>
+nnoremap <silent> < :exec "vertical resize -1"<CR>
+nnoremap <silent> + :exec "resize +1"<CR>
+nnoremap <silent> - :exec "resize -1"<CR>
 
 " highlight last inserted text
 nnoremap gV `[v`]
@@ -45,7 +51,7 @@ inoremap jk <esc>
 " Super-undo
 nnoremap <leader>u :GundoToggle<CR>
 " open ag.vim
-nnoremap <leader>a :Ag
+nnoremap <leader>a :Ag 
 " edit vimrc/zshrc and load vimrc bindings
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
@@ -57,3 +63,6 @@ let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+" File-type specific tabs
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
